@@ -1,0 +1,59 @@
+Index: untitled/src/main/java/lesson_8/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/untitled/src/main/java/lesson_8/Main.java b/untitled/src/main/java/lesson_8/Main.java
+new file mode 100644
+--- /dev/null	(date 1736424663706)
++++ b/untitled/src/main/java/lesson_8/Main.java	(date 1736424663706)
+@@ -0,0 +1,6 @@
++package lesson_8;
++
++public class Main {
++    Employee emp = new Employee("Alex Beleya", 30, 30000, "+787778787", "example@mail.com", "Vice-president");
++    emp.to
++}
+Index: untitled/src/main/java/lesson_8/Employee.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/untitled/src/main/java/lesson_8/Employee.java b/untitled/src/main/java/lesson_8/Employee.java
+new file mode 100644
+--- /dev/null	(date 1736424663698)
++++ b/untitled/src/main/java/lesson_8/Employee.java	(date 1736424663698)
+@@ -0,0 +1,33 @@
++package lesson_8;
++
++public class Employee {
++    String fullName;
++    String job;
++    String email;
++    String phoneNumber;
++    int salary;
++    int age;
++
++
++    public Employee(String fullName, int age, int salary, String phoneNumber, String email, String job) {
++        this.fullName = fullName;
++        this.age = age;
++        this.salary = salary;
++        this.phoneNumber = phoneNumber;
++        this.email = email;
++        this.job = job;
++    }
++
++    @Override
++    public String toString() {
++        return "Employee{" +
++                "fullName='" + fullName + '\'' +
++                ", job='" + job + '\'' +
++                ", email='" + email + '\'' +
++                ", phoneNumber='" + phoneNumber + '\'' +
++                ", salary=" + salary +
++                ", age=" + age +
++                '}';
++    }
++
++}
